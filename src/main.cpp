@@ -42,11 +42,10 @@ class $modify(MyCustomizeObjectLayer, CustomizeObjectLayer) {
 		auto fields = m_fields.self();
 
 		CustomizeObjectLayer::onSelectMode(sender);
-		m_kerningSlider->setVisible(false);
-		m_kerningLabel->setVisible(false);
-		if (fields->m_warningLabel) {
-			fields->m_warningLabel->setVisible(sender->getTag() == 3);
-		}
+		if (m_kerningSlider) m_kerningSlider->setVisible(false);
+		if (m_kerningLabel) m_kerningLabel->setVisible(false);
+		if (fields->m_warningLabel) fields->m_warningLabel->setVisible(sender->getTag() == 3);
+		
 	}
 
 	void onClear(CCObject* sender) {
