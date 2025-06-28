@@ -4,7 +4,11 @@
 using namespace geode::prelude;
 
 class $modify(MyCustomizeObjectLayer, CustomizeObjectLayer) {
-	
+    static void onModify(auto& self) {
+        if (!self.setHookPriorityBeforePost("CustomizeObjectLayer::onClose", "nwo5.text_object_utils")) {
+            geode::log::warn("Failed to set hook priority.");
+        }
+    }
 	struct Fields {
 		bool m_textObjects = false;
 		CCLabelBMFont* m_warningLabel = nullptr;
