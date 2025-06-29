@@ -56,7 +56,7 @@ class $modify(MyCustomizeObjectLayer, CustomizeObjectLayer) {
 		auto fields = m_fields.self();
 		if (fields->m_textObjects) {
 			for (TextGameObject* object : CCArrayExt<TextGameObject*>(m_targetObjects)) {
-				object->updateTextObject("", true);
+				object->updateTextObject("", false);
 			}
 			m_textInput->setString("");
 			return;
@@ -68,7 +68,7 @@ class $modify(MyCustomizeObjectLayer, CustomizeObjectLayer) {
 		auto fields = m_fields.self();
 		if (fields->m_textObjects) {
 			for (TextGameObject* object : CCArrayExt<TextGameObject*>(m_targetObjects)) {
-				object->updateTextObject(p0->getString(), true);
+				object->updateTextObject(p0->getString(), false);
 			}
 			return;
 		}

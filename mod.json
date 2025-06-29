@@ -8,7 +8,7 @@
 	},
 	"id": "alphalaneous.multi_text_edit",
 	"name": "Multi Text Edit",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "Alphalaneous",
 	"description": "Allow editing multiple text objects at once",
 	"tags": ["editor", "enhancement", "utility"],

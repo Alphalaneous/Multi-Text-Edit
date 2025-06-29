@@ -1,3 +1,6 @@
+# 1.0.2
+- Fix weird looking text
+
 # 1.0.1
 - Crash fix
 - Bug fix
